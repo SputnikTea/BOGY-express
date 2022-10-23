@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "2c001de4-b3a0-4367-bb81-774cd0bc6618",
+		"name": "BOGY express Server - javascript exercises",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "node-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-01/input",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-01",
+						"input"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-02",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-02/input",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-02",
+						"input"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-03",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-03/input",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-03",
+						"input"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-04",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-04/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-04",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-05",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-05/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-05",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-06",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\": \"John\", \"lastName\": \"Smith\"}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-07",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"propertyName\": \"isAdmin\", \"propertyValue\": true}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-08",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"This\", \"is\", \"an\", \"array!\"]"
+				},
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-08",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "node-09",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"This\", \"is\", \"an\", \"array!\"]"
+				},
+				"url": {
+					"raw": "http://localhost:3000/exercises/node-09",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"node-09"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
