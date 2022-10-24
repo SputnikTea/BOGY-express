@@ -12,7 +12,7 @@ const router = Router()
 // Console output
 // https://developer.mozilla.org/en-US/docs/Web/API/Console/log
 function exercise01(inputString) {
-  console.log(inputString)
+
 }
 router.get('/node-01/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -23,7 +23,7 @@ router.get('/node-01/:functionInput', (req, res) => {
 // Data Types
 // https://javascript.info/types#type-typeof
 function exercise02(inputString) {
-  console.log(typeof inputString)
+
 }
 router.get('/node-02/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -32,7 +32,7 @@ router.get('/node-02/:functionInput', (req, res) => {
 })
 
 function exercise03(inputString) {
-  return typeof inputString
+
 }
 router.get('/node-03/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -44,7 +44,7 @@ router.get('/node-03/:functionInput', (req, res) => {
 // Conversion
 // https://javascript.info/type-conversions#numeric-conversion
 function exercise04(inputString) {
-  return Number(inputString) * 2
+
 }
 router.get('/node-04/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -56,10 +56,7 @@ router.get('/node-04/:functionInput', (req, res) => {
 // Comparisons
 // https://javascript.info/comparison
 function exercise05(inputString) {
-  if(Number(inputString) > 10) {
-    return 'Yes'
-  }
-  return 'No'
+
 }
 router.get('/node-05/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -71,7 +68,7 @@ router.get('/node-05/:functionInput', (req, res) => {
 // Objects
 // https://javascript.info/object
 function exercise06(inputObject) {
-  return inputObject.lastName
+
 }
 router.post('/node-06', (req, res) => {
   const functionInput = req.body // {"firstName": "John", "lastName": "Smith"}
@@ -81,13 +78,7 @@ router.post('/node-06', (req, res) => {
 
 // https://javascript.info/object#square-brackets
 function exercise07(inputObject) {
-  const propertyName = inputObject.propertyName
-  const propertyValue = inputObject.propertyValue
 
-  const newObject = {}
-  newObject[propertyName] = propertyValue
-
-  return newObject
 }
 router.post('/node-07', (req, res) => {
   const functionInput = req.body  // {"propertyName": "isAdmin", "propertyValue": true}
@@ -100,11 +91,7 @@ router.post('/node-07', (req, res) => {
 // https://javascript.info/array
 // https://javascript.info/array#loops
 function exercise08(inputArray) {
-  let resultString = ''
-  for (let i = 0; i < inputArray.length; i++) {
-    resultString += inputArray[i]
-  }
-  return resultString
+
 }
 router.post('/node-08', (req, res) => {
   const functionInput = req.body  // ["This", "is", "an", "array!"]
@@ -115,10 +102,7 @@ router.post('/node-08', (req, res) => {
 // https://javascript.info/string#string-length
 // https://javascript.info/array-methods#transform-an-array
 function exercise09(inputArray) {
-  const numberOfCharsPerWord = inputArray.map(function(string) {return string.length} )
-  return numberOfCharsPerWord.reduce(function (accumulator, numberOfChars) {
-    return accumulator + numberOfChars
-  })
+
 }
 router.post('/node-09', (req, res) => {
   const functionInput = req.body  // ["This", "is", "an", "array!"]
