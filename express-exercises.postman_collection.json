@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "10bb6490-b32e-4113-9596-cab1226750b5",
+		"name": "BOGY - express exercises",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "express-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/exercises/express/user/0123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"express",
+						"user",
+						"0123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "express-02",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":\"0123\",\n    \"name\":\"Alice\",\n    \"balance\":20,\n    \"lastBalanceUpdate\":1666597091414,\n    \"transfers\":[\"0987\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/exercises/express/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"express",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "express-03",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\":\"0123\",\n    \"to\":\"3210\",\n    \"amount\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/exercises/express/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"exercises",
+						"express",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

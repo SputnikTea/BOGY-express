@@ -1,11 +1,11 @@
-import {Router} from 'express'
+import { Router } from 'express'
 
 const router = Router()
 
 // Java Script basics crash course
 // https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#language_basics_crash_course
 
-// The course we will flollow
+// The exercises are inspired by:
 // https://javascript.info/
 
 
@@ -104,7 +104,6 @@ function exercise08(inputArray) {
   for (let i = 0; i < inputArray.length; i++) {
     resultString += inputArray[i]
   }
-
   return resultString
 }
 router.post('/node-08', (req, res) => {
