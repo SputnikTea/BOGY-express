@@ -12,7 +12,7 @@ const router = Router()
 // Console output
 // https://developer.mozilla.org/en-US/docs/Web/API/Console/log
 function exercise01(inputString) {
-
+  console.log(inputString)
 }
 router.get('/node-01/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -23,7 +23,7 @@ router.get('/node-01/:functionInput', (req, res) => {
 // Data Types
 // https://javascript.info/types#type-typeof
 function exercise02(inputString) {
-
+  console.log(typeof inputString)
 }
 router.get('/node-02/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -32,7 +32,7 @@ router.get('/node-02/:functionInput', (req, res) => {
 })
 
 function exercise03(inputString) {
-
+  return typeof inputString
 }
 router.get('/node-03/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
