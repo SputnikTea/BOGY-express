@@ -44,7 +44,7 @@ router.get('/node-03/:functionInput', (req, res) => {
 // Conversion
 // https://javascript.info/type-conversions#numeric-conversion
 function exercise04(inputString) {
-
+  console.log(inputString * 2)
 }
 router.get('/node-04/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -56,7 +56,7 @@ router.get('/node-04/:functionInput', (req, res) => {
 // Comparisons
 // https://javascript.info/comparison
 function exercise05(inputString) {
-
+  console.log(inputString > 10)
 }
 router.get('/node-05/:functionInput', (req, res) => {
   const functionInput = req.params?.functionInput
@@ -69,6 +69,9 @@ router.get('/node-05/:functionInput', (req, res) => {
 // https://javascript.info/object
 function exercise06(inputObject) {
 
+  console.log(inputObject.lastName)
+  return inputObject.lastName
+
 }
 router.post('/node-06', (req, res) => {
   const functionInput = req.body // {"firstName": "John", "lastName": "Smith"}
@@ -78,6 +81,9 @@ router.post('/node-06', (req, res) => {
 
 // https://javascript.info/object#square-brackets
 function exercise07(inputObject) {
+  let newObject= {"propertyName": "isAdmin", "propertyValue": true}
+  return newObject
+
 
 }
 router.post('/node-07', (req, res) => {
@@ -91,6 +97,10 @@ router.post('/node-07', (req, res) => {
 // https://javascript.info/array
 // https://javascript.info/array#loops
 function exercise08(inputArray) {
+  let array= ["this is an array!"]
+  return array
+
+
 
 }
 router.post('/node-08', (req, res) => {
