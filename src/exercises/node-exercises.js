@@ -2,7 +2,7 @@ import { Router } from 'express'
 
 const router = Router()
 
-// TODO: Node exercises ohne express, dann sind die express speziefischen statements wie z.B. "router.get" verwirrend.
+// TODO: Node exercises ohne express, dann sind die Express speziefischen statements wie z.B. "router.get" verwirrend.
 
 // Java Script basics crash course
 // https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#language_basics_crash_course | Im Crash-Course geht es um JavaScript im Browser, vieleicht Fragen sich manche wo ein Knopf sein soll, der in dem Crash-Course genannt wurde
